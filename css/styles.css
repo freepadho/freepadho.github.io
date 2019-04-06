@@ -1,14 +1,24 @@
 
+* {
+	margin: 0;
+}
 body {
     font-family: Roboto;
-    margin: 50;
     text-align:center;
+    color: #777777;
 }
 
 h1 {
 	font-family: Major Mono Display;
-    font-weight: 400;
     font-size: 3em;
-    margin-top:150;
+    //color: #616DBB;
+}
+
+.caption {
+}
+
+.heading {
+	display: inline-block;
+	margin: 80px 0px;
 }
 
