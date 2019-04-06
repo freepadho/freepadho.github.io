@@ -5,12 +5,12 @@ function saveToFirebase(email) {
 
     firebase.database().ref('subscription-entries').push().set(emailObject)
         .then(function(snapshot) {
-            success(); // some success method
+            ;//success(); // some success method
         }, function(error) {
             console.log('error' + error);
-            error(); // some error method
+            //error(); // some error method
         });
 }
 //$("#saveToFirebase").bind("click",saveToFirebase);
-saveToFirebase(email);
+saveToFirebase();
 
