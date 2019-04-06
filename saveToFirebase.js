@@ -1,4 +1,7 @@
-function saveToFirebase(email) {
+function saveToFirebase() {
+
+    email = document.getElementById('email').value;
+
     var emailObject = {
         email: email
     };
@@ -12,5 +15,5 @@ function saveToFirebase(email) {
         });
 }
 //$("#saveToFirebase").bind("click",saveToFirebase);
-saveToFirebase();
+//saveToFirebase(email);
 
