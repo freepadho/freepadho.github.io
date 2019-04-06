@@ -15,5 +15,10 @@ function saveToFirebase() {
         });
 }
 //$("#saveToFirebase").bind("click",saveToFirebase);
-saveToFirebase();
+var form = document.getElementById("email_form");
+if(form.addEventListener){
+    form.addEventListener("submit", saveToFirebase, false);
+} else if(form.attachEvent){
+    form.attachEvent('onsubmit', saveToFirebase);
+}
 
