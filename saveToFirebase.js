@@ -15,5 +15,5 @@ function saveToFirebase() {
         });
 }
 //$("#saveToFirebase").bind("click",saveToFirebase);
-//saveToFirebase(email);
+saveToFirebase();
 
