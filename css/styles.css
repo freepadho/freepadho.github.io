@@ -54,3 +54,8 @@ body {
 	border-color: #616DBB;
 
 }
+
+.alert {
+	border-radius: 20px;
+	background-color: #ffffff00;
+}
