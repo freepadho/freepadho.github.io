@@ -10,10 +10,10 @@ function saveToFirebase() {
         .then(function(snapshot) {
             //success(); // some success method
             document.getElementById('success').className = "alert alert-success";
-            document.getElementById('success').innerText = "Successful!";
+            document.getElementById('success').innerHTML = "Successful!";
         }, function(error) {
             document.getElementById('success').className = "alert alert-danger";
-            document.getElementById('success').innerText = "Something went wrong!";
+            document.getElementById('success').innerHTML = "Something went wrong!";
             console.log('error' + error);
             //error(); // some error method
         });
