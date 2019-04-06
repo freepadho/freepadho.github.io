@@ -11,6 +11,6 @@ function saveToFirebase(email) {
             error(); // some error method
         });
 }
-$("#saveToFirebase").bind("click",saveToFirebase);
-//saveToFirebase(email);
+//$("#saveToFirebase").bind("click",saveToFirebase);
+saveToFirebase(email);
 
