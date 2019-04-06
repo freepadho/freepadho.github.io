@@ -13,12 +13,12 @@ function saveToFirebase() {
             console.log('error' + error);
             //error(); // some error method
         });
+
+    return false;
 }
 //$("#saveToFirebase").bind("click",saveToFirebase);
-var form = document.getElementById("email_form");
-if(form.addEventListener){
-    form.addEventListener("submit", saveToFirebase, false);
-} else if(form.attachEvent){
-    form.attachEvent('onsubmit', saveToFirebase);
+function init(){
+    document.getElementById('email_form').onsubmit = saveToFirebase;
 }
+window.onload = init;
 
