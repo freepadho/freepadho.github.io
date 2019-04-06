@@ -1,24 +1,56 @@
 
-* {
-	margin: 0;
-}
 body {
-    font-family: Roboto;
-    text-align:center;
-    color: #777777;
+	font-family: Roboto;
+    /*color: #777777;*/
 }
 
-h1 {
+.heading-eduward {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	margin-right: 80px;
+	margin-left: 80px
+}
+
+.heading-eduward h1 {
 	font-family: Major Mono Display;
-    font-size: 3em;
-    color: #616DBB;
+	font-size: 4em;
+/*	font-weight: bold;
+*/    text-align: center;
+    color: #23349F;
+    margin: 0;
+    padding: 0;
 }
 
 .caption {
+    margin: 0;
+    color: #E78518;
+    text-align: center;
+    font-style: italic;
+    padding: 0;
 }
 
-.heading {
-	display: inline-block;
-	margin: 80px 0px;
+.btn-outline-primary {
+	border-radius: 20px;
+	border-color: #616DBB;
+	color: #23349F;
 }
 
+.btn-outline-primary:hover {
+	background-color: #23349F;
+	border-color: #616DBB;
+}
+
+.card {
+	border: none;
+}
+
+.card-title {
+	color:#23349F;
+}
+
+.form-control {
+	border-radius: 20px;
+	border-color: #616DBB;
+
+}
