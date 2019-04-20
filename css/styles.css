@@ -41,10 +41,23 @@ body {
     padding: 0;
 }
 
+.btn-outline-info {
+	border-radius: 20px;
+	border-color: var(--lighter-secondary-color); /*var(--lighter-secondary-color);*/
+	border: 0px;
+	color: var(--primary-color);
+}
+
+.btn-outline-info:hover {
+	background-color: var(--primary-color);
+	border-color: var(--secondary-color);
+}
+
 .btn-outline-primary {
 	border-radius: 20px;
 	border-color: var(--lighter-secondary-color); /*var(--lighter-secondary-color);*/
-	color: var(--primary-color);
+	border: 0px;
+	color: var(--secondary-color);
 }
 
 .btn-outline-primary:hover {
@@ -52,11 +65,22 @@ body {
 	border-color: var(--secondary-color);
 }
 
+.btn-outline-primary:active {
+	border-radius: 20px;
+	border-color: var(--lighter-secondary-color); /*var(--lighter-secondary-color);*/
+	border: 2px;
+	color: var(--secondary-color);
+}
+
 .card {
-	border: none;
-	width: 25rem;
+	border: 2px solid var(--lighter-secondary-color);
+	width: 50%;
+	min-width: 500px;
+	max-width: 600px;
 	display: inline-block;
 	text-align: center;
+	border-radius: 25px;
+	/* box-shadow: 2px 2px 5px #f3f3f3; */
 }
 
 .card-title {
@@ -64,12 +88,14 @@ body {
 }
 
 .form-control {
-	border-radius: 20px;
-	border-color: var(--lighter-primary-color);
-	color: var(--lighter-primary-color);
+	border-radius: 0px;
+	border-color: gray;
+	border-width: 0px 0px 2px 0px;
+	color: var(--lighter-secondary-color);
 }
 
 .alert {
 	border-radius: 20px;
-	background-color: var(--dark-primary-color);
+	color: white;
+	background-color: var(--light-secondary-color);
 }
